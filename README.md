@@ -1,77 +1,93 @@
-# Sabbir Hossen's Professional Portfolio
+# Sabbir Hossen — Personal Portfolio
 
-[![GitHub Pages Status](https://github.com/mksabbirrahman/mksabbirrahman.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/mksabbirrahman/mksabbirrahman.github.io/actions/workflows/deploy.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Technology Stack](https://img.shields.io/badge/Tech%20Stack-[HTML%2C%20CSS%2C%20JavaScript]-orange.svg)]()
+[![GitHub Pages Status](https://github.com/mksabbirrahman/mksabbirrahman.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/mksabbirrahman/mksabbirrahman.github.io/actions/workflows/deploy.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-> **Live Demo:** [https://mksabbirrahman.github.io](https://mksabbirrahman.github.io)
-> 
-> *([Optional: Add a screenshot of your homepage here])*
+Live demo: https://mksabbir.me (site is published via GitHub Pages using the repository's `main` branch)
 
 ---
 
-## ✨ Overview
-
-Welcome to my professional portfolio website! This site serves as a comprehensive showcase of my skills, professional experience, and the projects I have completed as a **[Your Job Title, e.g., Software Developer, UI/UX Designer, Data Analyst]**.
-
-The primary purpose of this repository is to demonstrate my technical capabilities to potential employers and collaborators.
-
-### Key Features
-* **[Feature 1, e.g., Fully Responsive Design]**
-* **[Feature 2, e.g., Detailed Case Studies for Key Projects]**
-* **[Feature 3, e.g., Direct Link to Downloadable Resume]**
+Brief portfolio site for Sabbir Hossen — EEE student and front-end developer from Bangladesh. This repository contains a static HTML/CSS/JavaScript site used to showcase projects, experience, and contact information.
 
 ---
 
-## 🛠️ Technology Stack
+## **Overview**
 
-This portfolio was built and maintained using the following key technologies:
-
-* **Core:** [e.g., HTML5, CSS3, JavaScript (ES6+)]
-* **Framework/Library (if applicable):** [e.g., React, Next.js, Vue.js, or Bootstrap]
-* **Styling:** [e.g., Tailwind CSS, SASS, or plain CSS]
-* **Deployment:** GitHub Pages
-
-**_If this is a simple HTML/CSS site, you can simplify the list:_**
-* **Languages:** HTML5, CSS3, JavaScript
-* **Deployment:** GitHub Pages
+This repository hosts a simple, responsive portfolio website built with vanilla HTML, CSS, and JavaScript. The site highlights professional experience, projects, and provides contact links and a downloadable CV.
 
 ---
 
-## 🚀 Getting Started
+## **Tech Stack**
 
-Follow these instructions to set up a local copy of this project for development and testing.
+- **Core:** HTML5, CSS3, JavaScript (ES6)
+- **Styling:** Plain CSS with responsive media queries (`style.css`, `mediaqueries.css`)
+- **Deployment:** GitHub Pages (custom domain configured via `CNAME`)
 
-### Prerequisites
+---
 
-You may need **Node.js** and **npm** or **yarn** if your project uses a front-end framework (like React or Vue) for building. If it's a static HTML site, you only need a web browser.
+## **Getting Started (Local)**
 
-### Installation & Local Run
+These steps let you preview and develop the site locally.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/mksabbirrahman/mksabbirrahman.github.io.git](https://github.com/mksabbirrahman/mksabbirrahman.github.io.git)
+- **Clone the repo:**
+  ```powershell
+  git clone https://github.com/mksabbirrahman/mksabbirrahman.github.io.git
+  cd mksabbirrahman.github.io
+  ```
+- **Open locally:**
+  - Double-click `index.html` or open it with your browser.
+  - Or serve with a simple local server (recommended) to avoid CORS issues:
+    ```powershell
+    # Using Python 3
+    py -3 -m http.server 8000; Start-Process "http://localhost:8000"
     ```
-2.  **Navigate to the project directory:**
-    ```bash
-    cd mksabbirrahman.github.io
-    ```
-3.  **[If using a framework like React/Vue]:** Install dependencies:
-    ```bash
-    npm install
-    # or yarn install
-    ```
-4.  **Open the site:**
-    * **Static Site (HTML/CSS):** Simply open the `index.html` file in your preferred web browser.
-    * **Framework Site:** Start the development server:
-        ```bash
-        npm run dev 
-        # or npm start
-        ```
-    * The site will typically be available at `http://localhost:[PortNumber]`.
+
+No build step or package manager is required for this static site.
 
 ---
 
-## 🗺️ File Structure
+## **File Structure**
 
-The project structure is organized for clarity:
+- `index.html` — Main site HTML
+- `style.css` — Main styles
+- `mediaqueries.css` — Responsive styles
+- `script.js` — Small JS helpers (hamburger menu)
+- `assets/` — Images, icons, CV (`resume-example.pdf`), and other media
+- `CNAME` — Custom domain (`mksabbir.me`)
+
+---
+
+## **Deployment**
+
+The site is deployed to GitHub Pages. Common deployment workflow:
+
+- Push changes to the `main` branch.
+- GitHub Actions (if configured) will build/deploy, or you can enable Pages to serve from the `main` branch root.
+
+If you change the custom domain, update the `CNAME` file and GitHub Pages settings.
+
+---
+
+## **Usage & Editing Notes**
+
+- To update content, edit `index.html` and adjust text, links, or images in `assets/`.
+- For layout changes, modify `style.css` and `mediaqueries.css`.
+- For small interactive behavior (hamburger menu), see `script.js`.
+
+---
+
+## **License**
+
+This repository is available under the MIT License. See the `LICENSE` file (if present) or add one if you wish to publish under a specific license.
+
+---
+
+## **Contact**
+
+- Email: `mksabbirrahman@gmail.com`
+- LinkedIn / GitHub: links are embedded in the site navigation and assets.
+
+If you'd like, I can also:
+- Add a screenshot(s) to the README
+- Add a short CONTRIBUTING section or a `LICENSE` file
+- Improve meta tags or accessibility checks
+
