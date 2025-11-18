@@ -36,6 +36,9 @@
 <!-- Mobile Responsive -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Typing style text -->
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     
   </head>
   <body>
@@ -73,7 +76,7 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Sabbir Hossen</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p2"><span id="typed-text"></span></p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -404,5 +407,20 @@
       <p>Copyright &#169; 2025 Sabbir Hossen. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+
+      // script for typing style text
+  var typed = new Typed("#typed-text", {
+    strings: [
+      "A Web Developer.",
+      "A Web Designer.",
+      "An Engineer.",
+    ],
+    typeSpeed: 60,   // টাইপের গতি
+    backSpeed: 40,   // মুছে ফেলার গতি
+    loop: true       // বারবার চালাবে
+  });
+</script>
+
   </body>
 </html>
