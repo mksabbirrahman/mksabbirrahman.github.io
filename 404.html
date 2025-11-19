@@ -3,55 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>404 Not Found</title>
+<title>404 Not Found 😂</title>
 <style>
     body {
         margin: 0;
         padding: 0;
+        background: #111;
+        color: #fff;
         font-family: "Poppins", sans-serif;
-        background: #f7f9fc;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
         text-align: center;
+        overflow: hidden;
     }
-    .box {
-        max-width: 500px;
+
+    .container {
+        position: relative;
+        z-index: 2;
     }
+
     h1 {
-        font-size: 80px;
+        font-size: 120px;
         margin: 0;
-        background: linear-gradient(90deg, #0d6efd, #111);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: 800;
+        animation: shake 1.5s infinite;
+        color: #ff4f4f;
+        text-shadow: 3px 3px 0 #fff;
     }
+
     p {
-        font-size: 18px;
-        margin: 10px 0 20px;
-        color: #555;
+        font-size: 22px;
+        margin: 10px 0 25px;
+        animation: float 2s infinite alternate;
     }
+
     a {
         padding: 12px 25px;
         background: #0d6efd;
         color: white;
+        border-radius: 10px;
+        font-weight: 700;
         text-decoration: none;
-        border-radius: 8px;
-        font-weight: 600;
-        transition: 0.3s ease;
+        transition: 0.3s;
     }
+
     a:hover {
-        background: #084dbf;
+        background: #0a52c3;
+        transform: scale(1.1);
+    }
+
+    /* Funny animation */
+    @keyframes shake {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(2deg); }
+        50% { transform: rotate(0deg); }
+        75% { transform: rotate(-2deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(10px); }
+    }
+
+    /* Funny moving emoji background */
+    .emoji {
+        position: absolute;
+        top: -50px;
+        font-size: 50px;
+        animation: fall 5s linear infinite;
+    }
+
+    @keyframes fall {
+        0% { transform: translateY(-100px) rotate(0deg); }
+        100% { transform: translateY(110vh) rotate(360deg); }
     }
 </style>
 </head>
 <body>
 
-<div class="box">
+<!-- Emojis falling -->
+<script>
+    const emojis = ["😂","🤦‍♂️","😵","🤡","🙄","💀","🤣","🤔"];
+    for (let i=0; i<20; i++) {
+        let e = document.createElement("div");
+        e.className = "emoji";
+        e.innerHTML = emojis[Math.floor(Math.random()*emojis.length)];
+        e.style.left = Math.random()*100 + "vw";
+        e.style.animationDuration = (3 + Math.random()*3) + "s";
+        document.body.appendChild(e);
+    }
+</script>
+
+<div class="container">
     <h1>404</h1>
-    <p>Oops! The page you are looking for doesn't exist.</p>
-    <a href="/">Go Home</a>
+    <p>Bro… You clicked something that doesn’t even exist 😂</p>
+    <a href="/">Go Back Home</a>
 </div>
 
 </body>
