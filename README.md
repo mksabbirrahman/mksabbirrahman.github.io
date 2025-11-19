@@ -1,6 +1,6 @@
 # Sabbir Hossen — Personal Portfolio
 
-[![GitHub Pages Status](https://github.com/mksabbirrahman/mksabbirrahman.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/mksabbirrahman/mksabbirrahman.github.io/actions/workflows/deploy.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Pages Status](https://github.com/mksabbirrahman/mksabbirrahman.github.io/actions/workflows/deploy.yml/badge.svg)] [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Live demo: https://mksabbir.me (site is published via GitHub Pages using the repository's `main` branch)
 
