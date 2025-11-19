@@ -466,3 +466,13 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Verified icon next to name in footer */
+.verified-icon {
+  width: 1.05rem;
+  height: 1.05rem;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+  margin-right: 0.25rem;
+  display: inline-block;
+}
