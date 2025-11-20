@@ -174,36 +174,6 @@ a:hover {
   transform: none;
 }
 
-/* Dropdown (desktop) */
-.nav-links { position: relative; align-items: center; }
-.dropdown { position: relative; }
-.drop-btn { cursor: pointer; padding: 0.25rem 0.5rem; display: inline-block; }
-.dropdown-menu {
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 0;
-  display: none;
-  min-width: 200px;
-  background: linear-gradient(180deg, #ffffff, #f7fbff);
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(13, 164, 255, 0.12);
-  padding: 0.5rem;
-  z-index: 40;
-}
-.dropdown:hover .dropdown-menu { display: block; animation: fadeDown 160ms ease; }
-.dropdown-menu li { list-style: none; }
-.dropdown-menu a { display: block; padding: 0.5rem 0.75rem; color: #111; border-radius: 6px; text-decoration: none; }
-.dropdown-menu a:hover { background: rgba(13,164,255,0.06); color: #0a6fb8; }
-
-@keyframes fadeDown { from { transform: translateY(-6px); opacity:0 } to { transform: translateY(0); opacity:1 } }
-
-/* Mobile submenu inside hamburger */
-.menu-links .menu-item { margin-top: 0.5rem; }
-.menu-links .submenu { display: none; margin-top: 0.5rem; padding-left: 0.5rem; display:flex; flex-direction:column; gap:0.25rem; }
-.menu-links.submenu-open .submenu { display: flex; }
-.menu-links .submenu a { padding: 0.5rem; color: black; text-decoration: none; border-radius: 6px; }
-.menu-links .submenu a:hover { background: rgba(0,0,0,0.05); }
-
 .hamburger-icon span:first-child {
   opacity: 1;
 }
@@ -505,32 +475,4 @@ footer p {
   margin-left: 0.4rem;
   margin-right: 0.25rem;
   display: inline-block;
-}
-
-/* Posts & Quotes styles */
-.post-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-.post-teaser {
-  padding: 1rem;
-  border: 1px solid rgb(220,220,220);
-  border-radius: 8px;
-  background: #fff;
-}
-.post-teaser h2 { margin-bottom: 0.25rem; }
-.post-date { color: #777; font-size: 0.9rem; margin-bottom: 0.5rem; }
-.post { max-width: 900px; }
-.post-content { margin-top: 1rem; line-height: 1.6; }
-
-.quotes-container { display: flex; flex-direction: column; gap: 1.5rem; }
-.quote-box { padding: 1rem; border-radius: 8px; border: 1px solid rgb(230,230,230); background: #fff; }
-.random-quote { background: linear-gradient(180deg,#f7fbff,#ffffff); border-color: #cfe9ff; }
-.quote-text { font-style: italic; font-size: 1.1rem; margin-bottom: 0.5rem; }
-.quote-author { text-align: right; color: #555; }
-
-@media (max-width: 900px) {
-  section, main { margin: 2rem; }
-  .nav-links { font-size: 1.1rem; }
 }
