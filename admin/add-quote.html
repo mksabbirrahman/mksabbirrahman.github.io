@@ -17,20 +17,8 @@
   </head>
   <body>
     <script>
-      // Simple client-side password gate — change ADMIN_PASS below
-      (function requireAuth(){
-        const ADMIN_PASS = 'letmein';
-        try{
-          if (localStorage.getItem('admin-unlocked') === '1') return;
-        }catch(e){}
-        const p = prompt('Enter admin password to access this page:');
-        if (p === ADMIN_PASS) {
-          try{ localStorage.setItem('admin-unlocked','1'); }catch(e){}
-          return;
-        }
-        alert('Incorrect password — returning to home.');
-        window.location.href = '../';
-      })();
+      // Admin tools have been removed. Redirect to home.
+      window.location.href = '../';
     </script>
     <nav id="desktop-nav">
       <div class="logo">Sabbir Hossen</div>
