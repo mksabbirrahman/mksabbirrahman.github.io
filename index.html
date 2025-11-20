@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabbir Hossen | EEE Student & Web Developer from Bangladesh</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
 
@@ -33,6 +34,8 @@
 <link rel="icon" type="image/png" href="./assets/favicon.png">
 
 <!-- Mobile Responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!-- Typing style text -->
  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
@@ -47,6 +50,14 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a class="drop-btn">Pages ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="./">Home</a></li>
+              <li><a href="posts/">Posts</a></li>
+              <li><a href="quotes.html">Quotes</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>
@@ -63,6 +74,15 @@
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li class="menu-item">
+            <a href="#" onclick="toggleSubmenu(); return false;">Pages ▾</a>
+            <div class="submenu">
+              <a href="./" onclick="toggleMenu()">Home</a>
+              <a href="../posts/" onclick="toggleMenu()">Posts</a>
+              <a href="../quotes.html" onclick="toggleMenu()">Quotes</a>
+              <a href="../header.html" onclick="toggleMenu()">Header Demo</a>
+            </div>
+          </li>
         </div>
       </div>
     </nav>
@@ -398,13 +418,28 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="posts/">Posts</a></li>
+            <li><a href="quotes.html">Quotes</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2025 <a href="https://www.facebook.com/mksabbirrahman143/" target="_blank" rel="noopener noreferrer">Sabbir Hossen</a>
-        <img src="./assets/bluecheckmark.png" alt="Verified account" class="verified-icon" />. All Rights Reserved.</p>
+      <p>Copyright &#169; 2025 <a href="https://www.facebook.com/mksabbirrahman143/" target="_blank" rel="noopener noreferrer">Sabbir Hossen</a>. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+
+      // script for typing style text
+  var typed = new Typed("#typed-text", {
+    strings: [
+      "A Web Developer.",
+      "A Web Designer.",
+      "An Engineer.",
+    ],
+    typeSpeed: 60,   // টাইপের গতি
+    backSpeed: 40,   // মুছে ফেলার গতি
+    loop: true       // বারবার চালাবে
+  });
+</script>
 
   </body>
 </html>

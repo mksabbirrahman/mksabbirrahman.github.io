@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Posts — Sabbir Hossen</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sabbir Hossen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="../">Home</a></li>
+          <li class="dropdown">
+            <a class="drop-btn">Pages ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="./">Posts</a></li>
+              <li><a href="../quotes.html">Quotes</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main style="margin:4rem 10rem;">
+      <h1 class="title">Posts</h1>
+      <div id="posts-root"></div>
+    </main>
+
+    <script src="../script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        if (window.initPostsPage) window.initPostsPage();
+      });
+    </script>
+  </body>
+</html>
