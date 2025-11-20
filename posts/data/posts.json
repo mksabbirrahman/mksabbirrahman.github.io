@@ -1,0 +1,9 @@
+[
+  {
+    "slug": "hello-world",
+    "title": "Hello World — My First Post",
+    "date": "2025-11-20",
+    "excerpt": "Welcome to my first post. I'll share thoughts, notes and short tutorials here.",
+    "content": "<p>Hello — this is my first post on my personal site. I'll use this space to publish short notes, ideas, and code snippets. Stay tuned for more.</p>"
+  }
+]
